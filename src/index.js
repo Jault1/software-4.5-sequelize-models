@@ -1,6 +1,7 @@
 const {sequelize, testConnection} = require("./models/conn");
 const Category = require("./models/categoryModel");
 const Item = require("./models/itemModel");
+// const { sequelizeMe } = require("sequelize");
 
 testConnection();
 

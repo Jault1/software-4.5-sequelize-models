@@ -25,7 +25,8 @@ const Item = sequelize.define("items", {
     category_id: {
         type: DataTypes.INTEGER
     }
-}, {
+}, 
+{
     timestamps: false, 
 });
 
@@ -33,4 +34,5 @@ Item.belongsTo(Category,{
     foreignKey: "category_id"
 });
 
+sequelize.sync();
 module.exports = Item;
